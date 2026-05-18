@@ -6,23 +6,28 @@ import Home from "./pages/home.tsx"
 import About from "./pages/about.tsx"
 import Contact from "./pages/contact.tsx"
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/o-mne",
+          element: <About />,
+        },
+        {
+          path: "/kontakt",
+          element: <Contact />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/o-mne",
-        element: <About />,
-      },
-      {
-        path: "/kontakt",
-        element: <Contact />,
-      },
-    ],
-  },
-])
+    basename: "/portfolio-app",
+  }
+)
