@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-800 bg-zinc-900">
               <img
-                src="/portfolio-logo.png"
+                src={`${import.meta.env.BASE_URL}portfolio-logo.png`}
                 alt="Logo"
                 className="h-5 w-5 object-contain opacity-60"
               />
