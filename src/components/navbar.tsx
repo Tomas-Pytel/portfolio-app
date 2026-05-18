@@ -34,7 +34,7 @@ export default function Navbar() {
         className="transition-transform duration-300 hover:scale-105 active:scale-95"
       >
         <img
-          src="/portfolio-logo.png"
+          src={`${import.meta.env.BASE_URL}portfolio-logo.png`}
           alt="Logo"
           className="h-12 w-12 rounded-xl object-contain filter-[drop-shadow(0_0_20px_rgba(245,158,11,0.6))] transition-all duration-300 hover:filter-[drop-shadow(0_0_25px_rgba(245,158,11,0.75))]"
         />
