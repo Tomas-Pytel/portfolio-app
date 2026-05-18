@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
       <h3 className="mb-10 text-3xl font-bold tracking-tight text-white">
-        Featured Work
+        Moja práca
       </h3>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {projects.map((project, i) => (
