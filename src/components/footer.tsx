@@ -14,13 +14,9 @@ export const Linkedin = ({ className }: { className?: string }) => (
 )
 
 const links: NavLink[] = [
-  { label: "GitHub", href: "https://github.com/Tomas-Pytel", icon: Github },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/tom%C3%A1%C5%A1-pytel-6272863a4/",
-    icon: Linkedin,
-  },
-  { label: "Email", href: "mailto:tomas.pytel12@gmail.com", icon: Mail },
+  { label: "GitHub", href: "https://github.com/...", icon: Github },
+  { label: "LinkedIn", href: "https://linkedin.com/...", icon: Linkedin },
+  { label: "Email", href: "mailto:...", icon: Mail },
 ]
 
 export default function Footer() {

@@ -9,7 +9,7 @@ export function App() {
       <Navbar />
 
       {/** Main section */}
-      <div className="min-h-screen">
+      <div className="min-h-[70vh]">
         <Outlet />
       </div>
 
