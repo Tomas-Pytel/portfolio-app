@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge" // <-- 1. Import Badge
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-24 text-center">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-24 text-center sm:px-6 sm:py-24">
       {/** Background blur */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute bottom-0 left-1/2 h-125 w-175 -translate-x-1/2 translate-y-[40%] rounded-full bg-amber-500/20 opacity-50 blur-[100px]"></div>
@@ -24,16 +24,16 @@ export default function Hero() {
           Full-stack Developer
         </Badge>
 
-        <h1 className="mb-6 cursor-default bg-linear-to-r from-amber-400 to-orange-500 bg-clip-text text-5xl font-bold tracking-tighter text-white transition-colors duration-500 hover:text-transparent md:text-7xl">
-          Tvorím digitálne produkty <br /> pomocou kódu a dizajnu
+        <h1 className="mb-6 cursor-default bg-linear-to-r from-amber-400 to-orange-500 bg-clip-text text-4xl font-bold tracking-tighter text-white transition-colors duration-500 hover:text-transparent sm:text-5xl md:text-7xl">
+          Tvorím digitálne produkty <br /> spojením kódu a dizajnu
         </h1>
 
-        <p className="mx-auto mb-10 max-w-150 text-lg leading-relaxed text-zinc-400">
+        <p className="mx-auto mb-10 max-w-150 text-sm leading-relaxed text-zinc-400 sm:text-lg">
           Špecializujem sa na moderné používateľské rozhrania a škálovateľné
           webové aplikácie, ktoré spájajú estetiku s funkčnosťou
         </p>
 
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <Button
             size="lg"
             className="rounded-full bg-amber-500 px-8 font-bold text-zinc-950 transition-all hover:scale-105 hover:bg-amber-400"
@@ -45,7 +45,7 @@ export default function Hero() {
             variant="outline"
             className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-all hover:bg-zinc-900 hover:text-amber-400"
           >
-            Kontaktovať ma
+            Kontaktujte ma
           </Button>
         </div>
       </motion.div>
