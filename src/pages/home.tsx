@@ -1,5 +1,5 @@
 import Hero from "@/components/hero"
-import Projects from "@/components/projects"
+import ProjectsHero from "@/components/projects-hero"
 import TechStack from "@/components/tech-stack"
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <div className="animate-in duration-700 fade-in">
       <Hero />
       <TechStack />
-      <Projects />
+      <ProjectsHero />
     </div>
   )
 }

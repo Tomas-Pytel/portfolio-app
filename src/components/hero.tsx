@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge" // <-- 1. Import Badge
+import { Link } from "react-router-dom"
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="z-10flex relative flex-col items-center"
+        className="relative z-10 flex flex-col items-center"
       >
         <Badge
           variant="outline"
@@ -36,16 +37,18 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <Button
             size="lg"
+            asChild
             className="rounded-full bg-amber-500 px-8 font-bold text-zinc-950 transition-all hover:scale-105 hover:bg-amber-400"
           >
-            Zobraziť projekty
+            <Link to="/projects">Zobraziť projekty</Link>
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-all hover:bg-zinc-900 hover:text-amber-400"
+            asChild
+            className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-colors hover:bg-zinc-900 hover:text-amber-400"
           >
-            Kontaktujte ma
+            <a href="mailto:tomas.pytel12@gmail.com">Kontaktujte ma</a>
           </Button>
         </div>
       </motion.div>
