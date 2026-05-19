@@ -50,7 +50,7 @@ export default function Projects() {
                 href={project.link}
                 className="relative w-full overflow-hidden rounded-2xl md:w-1/2"
               >
-                <div className="aspect-[16/10] w-full bg-zinc-900">
+                <div className="aspect-16/10 w-full bg-zinc-900">
                   <img
                     src={project.image}
                     alt={project.title}
