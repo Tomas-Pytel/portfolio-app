@@ -39,7 +39,7 @@ const journey = [
 export default function About() {
   return (
     <div className="mx-auto max-w-4xl animate-in px-10 py-20 duration-700 fade-in lg:px-6">
-      {/* O mne */}
+      {/* About me */}
       <section className="mb-20 text-left">
         <h1 className="mb-8 text-center text-5xl font-bold tracking-tighter text-white md:text-left lg:text-7xl">
           Niečo o{" "}
@@ -63,13 +63,13 @@ export default function About() {
         </p>
       </section>
 
-      {/* Moja cesta - Timeline */}
+      {/* My Timeline */}
       <section>
         <h2 className="mb-10 text-3xl font-bold tracking-tight text-white">
           Moja cesta
         </h2>
 
-        {/* Kontajner s vertikálnou čiarou */}
+        {/* Timeline container */}
         <div className="relative ml-3 space-y-8 border-l-2 border-amber-500/60 pb-4 md:ml-6">
           {journey.map((item, index) => (
             <div key={index} className="relative pl-8 md:pl-12">
@@ -82,7 +82,7 @@ export default function About() {
                 )}
               </div>
 
-              {/* Karta s obsahom */}
+              {/* Card content */}
               <Card className="border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/80 hover:shadow-lg hover:shadow-amber-500/20">
                 <CardHeader className="flex flex-col items-start gap-4 space-y-0 pb-2 sm:flex-row sm:items-center sm:justify-between">
                   <div>
