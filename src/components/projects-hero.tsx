@@ -20,7 +20,7 @@ const projects = [
   },
 ]
 
-export default function Projects() {
+export default function ProjectsHero() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
       {/* Header */}
