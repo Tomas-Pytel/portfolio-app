@@ -16,7 +16,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="z-10flex relative flex-col items-center"
+        className="relative z-10 flex flex-col items-center"
       >
         <Badge
           variant="outline"
@@ -45,7 +45,8 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-all hover:bg-zinc-900 hover:text-amber-400"
+            asChild
+            className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-colors hover:bg-zinc-900 hover:text-amber-400"
           >
             <a href="mailto:tomas.pytel12@gmail.com">Kontaktujte ma</a>
           </Button>
