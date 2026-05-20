@@ -40,7 +40,7 @@ export default function Hero() {
             asChild
             className="rounded-full bg-amber-500 px-8 font-bold text-zinc-950 transition-all hover:scale-105 hover:bg-amber-400"
           >
-            <Link to="/projects">Zobraziť projekty</Link>
+            <Link to="/projekty">Zobraziť projekty</Link>
           </Button>
           <Button
             size="lg"
@@ -48,7 +48,7 @@ export default function Hero() {
             asChild
             className="rounded-full border-zinc-800 bg-zinc-950/50 px-8 text-white backdrop-blur-sm transition-colors hover:bg-zinc-900 hover:text-amber-400"
           >
-            <a href="mailto:tomas.pytel12@gmail.com">Kontaktujte ma</a>
+            <Link to="/kontakt">Kontaktujte ma</Link>
           </Button>
         </div>
       </motion.div>
