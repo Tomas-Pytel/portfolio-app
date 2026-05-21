@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Briefcase, GraduationCap } from "lucide-react"
+import { Helmet } from "react-helmet-async"
 
 const journey = [
   {
@@ -39,6 +40,18 @@ const journey = [
 export default function About() {
   return (
     <div className="mx-auto max-w-4xl animate-in px-10 py-20 duration-700 fade-in lg:px-6">
+      <Helmet>
+        <title>O mne | Tomáš Pytel - Full-stack Developer</title>
+        <meta
+          name="description"
+          content="Zistite viac o mojej ceste k programovaniu. Som študent FRI UNIZA a full-stack developer zameraný na moderný web development a self-hosting."
+        />
+        <link
+          rel="canonical"
+          href="https://Tomas-Pytel.github.io/portfolio-app/o-mne"
+        />
+      </Helmet>
+
       {/* About me */}
       <section className="mb-20 text-left">
         <h1 className="mb-8 text-center text-5xl font-bold tracking-tighter text-white md:text-left lg:text-7xl">

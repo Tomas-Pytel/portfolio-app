@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import { Github } from "@/components/footer"
+import { Helmet } from "react-helmet-async"
 
 const allProjects = [
   {
@@ -26,6 +27,18 @@ const allProjects = [
 export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <Helmet>
+        <title>Projekty | Tomáš Pytel - Tvorba webových aplikácií</title>
+        <meta
+          name="description"
+          content="Prezrite si moje portfólio projektov. Od komplexných full-stack aplikácií po osobné experimenty v React, Tailwind a Typescript."
+        />
+        <link
+          rel="canonical"
+          href="https://Tomas-Pytel.github.io/portfolio-app/projekty"
+        />
+      </Helmet>
+
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
