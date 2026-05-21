@@ -52,6 +52,22 @@ routes.forEach((route) => {
     `<link rel="canonical" href="https://Tomas-Pytel.github.io/portfolio-app/${route.path}" />`
   )
 
+  // Overwriting Open Graph tags
+  newHtml = newHtml.replace(
+    /<meta\s+property=["']og:title["']\s+content=["'].*?["']\s*\/?>/i,
+    `<meta property="og:title" content="${route.title}" />`
+  )
+
+  newHtml = newHtml.replace(
+    /<meta\s+property=["']og:description["']\s+content=["'].*?["']\s*\/?>/i,
+    `<meta property="og:description" content="${route.desc}" />`
+  )
+
+  newHtml = newHtml.replace(
+    /<meta\s+property=["']og:url["']\s+content=["'].*?["']\s*\/?>/i,
+    `<meta property="og:url" content="https://Tomas-Pytel.github.io/portfolio-app/${route.path}" />`
+  )
+
   // Saving of updated file
   fs.writeFileSync(path.join(routeDir, "index.html"), newHtml)
 })

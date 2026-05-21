@@ -9,7 +9,7 @@ const allProjects = [
       "Komplexná webová aplikácia na správu nájomných nehnuteľností. Umožňuje prenajímateľom sledovať platby, zmluvy a komunikáciu s nájomníkmi na jednom mieste.",
     link: "https://rentio-rosy.vercel.app/",
     github: "",
-    image: `${import.meta.env.BASE_URL}rentio.png`,
+    image: `${import.meta.env.BASE_URL}rentio.webp`,
     tags: ["Nextjs", "Supabase", "Tailwind", "Prisma", "Zod"],
   },
   {
@@ -18,7 +18,7 @@ const allProjects = [
       "Táto stránka — osobné portfolio postavené na modernom stacku s dôrazom na animácie, typografiu a čistý kód.",
     link: "https://tomas-pytel.github.io/portfolio-app/",
     github: "https://github.com/tomas-pytel/portfolio-app",
-    image: `${import.meta.env.BASE_URL}portfolio.png`,
+    image: `${import.meta.env.BASE_URL}portfolio.webp`,
     tags: ["React", "Tailwind", "Framer Motion", "Typescript"],
   },
 ]
