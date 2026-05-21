@@ -38,6 +38,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <img
           src={image}
           alt={title}
+          loading="lazy"
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 rounded-xl ring-1 ring-white/10 ring-inset" />
@@ -59,6 +60,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 rel="noopener noreferrer"
                 className="text-zinc-400 transition-colors hover:text-white"
                 title="Zdrojový kód na GitHube"
+                aria-label={`Zdrojový kód projektu ${title} na GitHube`}
               >
                 <Github className="h-5 w-5" />
               </a>
