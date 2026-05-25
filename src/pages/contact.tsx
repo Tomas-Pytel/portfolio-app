@@ -2,10 +2,24 @@ import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
 
 import { Github, Linkedin } from "../components/footer"
+import { Helmet } from "react-helmet-async"
 
 export default function Contact() {
   return (
     <div className="mx-auto max-w-4xl animate-in px-6 py-32 text-center duration-700 fade-in">
+      <Helmet>
+        <title>Kontakt | Ozvite sa mi - Tomáš Pytel</title>
+        <meta
+          name="description"
+          content="Máte projekt alebo nápad na spoluprácu? Hľadáte šikovného programátora? Ozvite sa mi, som otvorený novým príležitostiam."
+        />
+        <link
+          rel="canonical"
+          href="https://Tomas-Pytel.github.io/portfolio-app/kontakt"
+        />
+      </Helmet>
+
+      {/** Content */}
       <h2 className="mb-6 text-sm font-bold tracking-[0.3em] text-amber-500 uppercase">
         Kontakt
       </h2>
