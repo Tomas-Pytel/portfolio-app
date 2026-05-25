@@ -3,11 +3,11 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Rentio",
+    title: "Flatily",
     description:
       "Komplexná webová aplikácia na správu nájomných nehnuteľností. Umožňuje prenajímateľom sledovať platby, zmluvy a komunikáciu s nájomníkmi na jednom mieste.",
-    link: "https://rentio-rosy.vercel.app/",
-    image: `${import.meta.env.BASE_URL}rentio.webp`,
+    link: "https://flatily-rosy.vercel.app/",
+    image: `${import.meta.env.BASE_URL}flatily.webp`,
     tags: ["Nextjs", "Supabase", "Tailwind", "Prisma", "Zod"],
   },
   {

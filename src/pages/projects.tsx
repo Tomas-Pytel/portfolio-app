@@ -4,12 +4,12 @@ import ProjectCard from "@/components/project-card"
 
 const allProjects = [
   {
-    title: "Rentio",
+    title: "Flatily",
     description:
       "Komplexná webová aplikácia na správu nájomných nehnuteľností. Umožňuje prenajímateľom sledovať platby, zmluvy a komunikáciu s nájomníkmi na jednom mieste.",
-    link: "https://rentio-rosy.vercel.app/",
+    link: "https://flatily-rosy.vercel.app/",
     github: "",
-    image: `${import.meta.env.BASE_URL}rentio.webp`,
+    image: `${import.meta.env.BASE_URL}flatily.webp`,
     tags: ["Nextjs", "Supabase", "Tailwind", "Prisma", "Zod"],
   },
   {
