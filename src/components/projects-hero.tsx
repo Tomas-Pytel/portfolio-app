@@ -3,11 +3,11 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Rentio",
+    title: "Flatily",
     description:
       "Komplexná webová aplikácia na správu nájomných nehnuteľností. Umožňuje prenajímateľom sledovať platby, zmluvy a komunikáciu s nájomníkmi na jednom mieste.",
-    link: "https://rentio-rosy.vercel.app/",
-    image: `${import.meta.env.BASE_URL}rentio.png`,
+    link: "https://flatily-rosy.vercel.app/",
+    image: `${import.meta.env.BASE_URL}flatily.webp`,
     tags: ["Nextjs", "Supabase", "Tailwind", "Prisma", "Zod"],
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description:
       "Táto stránka — osobné portfolio postavené na modernom stacku s dôrazom na animácie, typografiu a čistý kód.",
     link: "https://tomas-pytel.github.io/portfolio-app/",
-    image: `${import.meta.env.BASE_URL}portfolio.png`,
+    image: `${import.meta.env.BASE_URL}portfolio.webp`,
     tags: ["React", "Tailwind", "Framer Motion", "Typescript"],
   },
 ]
@@ -54,6 +54,7 @@ export default function ProjectsHero() {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>

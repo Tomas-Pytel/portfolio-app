@@ -29,7 +29,7 @@ export default function Navbar() {
           className="transition-transform duration-300 hover:scale-105 active:scale-95"
         >
           <img
-            src={`${import.meta.env.BASE_URL}portfolio-logo.png`}
+            src={`${import.meta.env.BASE_URL}portfolio-logo.webp`}
             alt="Logo"
             className="h-12 w-12 rounded-xl object-contain transition-all duration-300"
             style={{ filter: "drop-shadow(0 0 20px rgba(245,158,11,0.6))" }}

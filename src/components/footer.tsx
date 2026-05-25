@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-800 bg-zinc-900">
               <img
-                src={`${import.meta.env.BASE_URL}portfolio-logo.png`}
+                src={`${import.meta.env.BASE_URL}portfolio-logo.webp`}
                 alt="Logo"
                 className="h-5 w-5 object-contain opacity-60"
               />
@@ -57,13 +57,9 @@ export default function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="group flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-xs font-medium text-zinc-500 transition-all duration-200 hover:border-amber-400/30 hover:bg-amber-400/5 hover:text-amber-400"
+                className="group flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-xs font-medium text-zinc-500 transition-all duration-200 hover:border-zinc-700 hover:bg-zinc-800/30 hover:text-zinc-200"
               >
-                {Icon ? (
-                  <Icon className="h-4 w-4 transition-colors duration-200 group-hover:text-amber-400" />
-                ) : (
-                  ""
-                )}
+                {Icon ? <Icon className="h-4 w-4" /> : ""}
                 <span className="hidden sm:inline">{label}</span>
               </a>
             ))}
